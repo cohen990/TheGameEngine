@@ -1,0 +1,2 @@
+mygame: mygame.cpp
+	g++ -o run ../src/TGEobject.hpp ../src/TGEobject.cpp ../src/TGEgame.hpp ../src/TGEgame.cpp ../src/TGEwindowManager.cpp ../src/TGEwindowManager.hpp ../src/TGEengine.cpp mygame.cpp -lglfw
