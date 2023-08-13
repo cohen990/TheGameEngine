@@ -1,9 +1,10 @@
 #ifndef TGEGAMEOBJECT_HPP
 #define TGEGAMEOBJECT_HPP
 
-#include "../Cameras/TGEcamera.hpp"
 #include <vector>
 #include <memory>
+
+#include "../Cameras/TGEcamera.hpp"
 
 namespace TGE::Objects
 {

@@ -5,7 +5,7 @@
 
 using namespace TGE::Cameras;
 
-Camera::Camera() {
+PerspectiveCamera::PerspectiveCamera() {
 	_projection = glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
 	_view       = glm::lookAt(
 								glm::vec3(4,3,3), 

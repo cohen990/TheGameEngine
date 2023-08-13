@@ -3,12 +3,13 @@
 #include "../src/Objects/TGEgameObject.hpp"
 #include "../src/Objects/TGEmesh.hpp"
 #include "../src/Shaders/TGEbuiltInShaders.hpp"
-#include "../src/Cameras/TGEcamera.hpp"
+#include "../src/Cameras/TGEperspectiveCamera.hpp"
 
 #include <iostream>
 #include <memory>
 
 using namespace TGE::Objects;
+using namespace TGE::Cameras;
 
 int main()
 {
@@ -39,16 +40,17 @@ int main()
         std::cout << "failed to load the simple shader. Exiting." << std::endl;
         return -1;
     }
-    TGE::Objects::Mesh redTriangle = TGE::Objects::Mesh(rightSideUpTriangleVertices, sizeof(rightSideUpTriangleVertices), &*redShader);
+    Mesh redTriangle = Mesh(rightSideUpTriangleVertices, sizeof(rightSideUpTriangleVertices), &*redShader);
     boost::optional<TGE::Shaders::Shader> blueShader = TGE::Shaders::SimpleBlueShader();
     if (!blueShader)
     {
         std::cout << "failed to load the simple shader. Exiting." << std::endl;
         return -1;
     }
-    TGE::Objects::Mesh blueTriangle = TGE::Objects::Mesh(upsideDownTriangleVertices, sizeof(upsideDownTriangleVertices), &*blueShader);
+    Mesh blueTriangle = Mesh(upsideDownTriangleVertices, sizeof(upsideDownTriangleVertices), &*blueShader);
     game->AddObject(std::make_shared<Mesh>(redTriangle));
     game->AddObject(std::make_shared<Mesh>(blueTriangle));
+    game->AddCamera(new PerspectiveCamera());
     game->Play();
     game->Destroy();
 
