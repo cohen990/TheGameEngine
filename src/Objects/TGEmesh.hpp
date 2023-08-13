@@ -14,7 +14,7 @@ namespace TGE::Objects
         TGE::Shaders::Shader *_shader;
 
     public:
-        Mesh(float *vertices, TGE::Shaders::Shader *shader);
+        Mesh(float *vertices, unsigned long verticesLength, TGE::Shaders::Shader *shader);
         void Render() override;
     };
 }

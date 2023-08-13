@@ -29,7 +29,7 @@ int main()
         std::cout << "failed to load the simple shader. Exiting." << std::endl;
         return -1;
     }
-    TGE::Objects::Mesh mesh = TGE::Objects::Mesh(vertices, &*shader);
+    TGE::Objects::Mesh mesh = TGE::Objects::Mesh(vertices, sizeof(vertices), &*shader);
     std::cout << "about to play" << std::endl;
     game->AddObject(mesh);
     game->Play();

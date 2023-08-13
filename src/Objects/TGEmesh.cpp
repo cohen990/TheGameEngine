@@ -5,14 +5,16 @@
 
 using namespace TGE::Objects;
 
-Mesh::Mesh(float *vertices, TGE::Shaders::Shader *shader)
+Mesh::Mesh(float *vertices, unsigned long sizeOfVertices, TGE::Shaders::Shader *shader)
 {
+    std::cout << "length of vertices " << sizeOfVertices << std::endl;
+    std::cout << "vertices " << vertices << std::endl;
     _type = "Mesh";
     _shader = shader;
     GLuint vertexBuffer;
     glGenBuffers(1, &vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeOfVertices, vertices, GL_STATIC_DRAW);
     _vertexBuffer = vertexBuffer;
 }
 
