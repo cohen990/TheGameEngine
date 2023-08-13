@@ -1,12 +1,10 @@
 #include "TGEshader.hpp"
+#include <GL/glew.h>
 
 using namespace TGE::Shaders;
 
 TGE::Shaders::Shader::Shader(const unsigned int programID)
 {
     _programID = programID;
-}
-
-unsigned int TGE::Shaders::Shader::ProgramID(){
-    return _programID;
+    _MVPLocation = glGetUniformLocation(programID, "MVP"); 
 }

@@ -7,9 +7,11 @@ namespace TGE::Shaders
     {
     private:
         unsigned int _programID;
+        unsigned int _MVPLocation;
 
     public:
-        unsigned int ProgramID();
+        unsigned int ProgramID() { return _programID; };
+        unsigned int MVPLocation() { return _MVPLocation; };
         Shader(const unsigned int programID);
     };
 }

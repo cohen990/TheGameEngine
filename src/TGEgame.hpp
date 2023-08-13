@@ -3,9 +3,8 @@
 
 #include <GLFW/glfw3.h>
 #include <memory>
-#include "Objects/TGEobject.hpp"
-
-using namespace TGE::Objects;
+#include "Objects/TGEgameObject.hpp"
+#include "Cameras/TGEcamera.hpp"
 
 namespace TGE
 {
@@ -13,14 +12,16 @@ namespace TGE
     {
     private:
         GLFWwindow *_window;
-        Object _root;
+        TGE::Objects::GameObject _root;
+        TGE::Cameras::Camera* _camera;
 
     public:
         Game(GLFWwindow *window);
 
         void Destroy();
         void Play();
-        void AddObject(std::shared_ptr<Object> object) ;
+        void AddObject(std::shared_ptr<TGE::Objects::GameObject> object) ;
+        void AddCamera(TGE::Cameras::Camera* camera);
     };
 }
 

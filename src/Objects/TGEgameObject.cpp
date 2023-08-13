@@ -1,18 +1,19 @@
 #include <iostream>
 #include <memory>
-#include "TGEobject.hpp"
+#include "TGEgameObject.hpp"
+#include "../Cameras/TGEcamera.hpp"
 
 using namespace TGE::Objects;
 
-Object::Object(){
-    _type = "Object";
+GameObject::GameObject(){
+    _type = "GameObject";
 }
 
-void Object::AddChild(std::shared_ptr<Object> child){
+void GameObject::AddChild(std::shared_ptr<GameObject> child){
     _children.push_back(child);
 }
 
-void Object::DebugPrint(){
+void GameObject::DebugPrint(){
     std::cout << _type << " at address: " << this << std::endl;
 
     for (auto & child : _children) 
@@ -21,9 +22,9 @@ void Object::DebugPrint(){
     }
 }
 
-void Object::Render(){
+void GameObject::Render(TGE::Cameras::Camera* camera){
     for (auto & child : _children) 
     {
-        child->Render();
+        child->Render(camera);
     }
 }

@@ -1,11 +1,14 @@
 #include "../src/TGEengine.hpp"
 #include "../src/TGEgame.hpp"
-#include "../src/Objects/TGEobject.hpp"
+#include "../src/Objects/TGEgameObject.hpp"
 #include "../src/Objects/TGEmesh.hpp"
 #include "../src/Shaders/TGEbuiltInShaders.hpp"
+#include "../src/Cameras/TGEcamera.hpp"
 
 #include <iostream>
 #include <memory>
+
+using namespace TGE::Objects;
 
 int main()
 {
@@ -15,8 +18,8 @@ int main()
         std::cout << "Game failed to initialize. Exiting." << std::endl;
         return -1;
     }
-    TGE::Objects::Object object = TGE::Objects::Object();
-    game->AddObject(std::make_shared<Object>(object));
+    GameObject object = GameObject();
+    game->AddObject(std::make_shared<GameObject>(object));
 
     float rightSideUpTriangleVertices[] = {
         -1.0f, -1.0f, 0.0f,

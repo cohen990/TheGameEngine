@@ -2,11 +2,11 @@
 #define TGEROOT_HPP
 
 #include <vector>
-#include "TGEobject.hpp"
+#include "TGEgameObject.hpp"
 
 namespace TGE::Objects
 {
-    class Root : public Object
+    class Root : public GameObject
     {
     public:
         Root();
