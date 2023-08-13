@@ -7,8 +7,6 @@ using namespace TGE::Objects;
 
 Mesh::Mesh(float *vertices, unsigned long sizeOfVertices, TGE::Shaders::Shader *shader)
 {
-    std::cout << "length of vertices " << sizeOfVertices << std::endl;
-    std::cout << "vertices " << vertices << std::endl;
     _type = "Mesh";
     _shader = shader;
     GLuint vertexBuffer;
@@ -34,8 +32,5 @@ void Mesh::Render()
 
     glDrawArrays(GL_TRIANGLES, 0, 3); // 3 indices starting at 0 -> 1 triangle
     glDisableVertexAttribArray(0);
-    for (auto &child : _children)
-    {
-        child.Render();
-    }
+    TGE::Objects::Object::Render();
 }

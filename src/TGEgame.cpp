@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <GLFW/glfw3.h>
 #include "TGEgame.hpp"
 #include "Objects/TGEroot.hpp"
@@ -32,6 +33,6 @@ void Game::Play()
              glfwWindowShouldClose(_window) == 0);
 }
 
-void Game::AddObject(Object object){
+void Game::AddObject(std::shared_ptr<Object> object){
     _root.AddChild(object);
 };

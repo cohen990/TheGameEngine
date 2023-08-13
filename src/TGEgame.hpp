@@ -2,6 +2,7 @@
 #define TGEGAME_HPP
 
 #include <GLFW/glfw3.h>
+#include <memory>
 #include "Objects/TGEobject.hpp"
 
 using namespace TGE::Objects;
@@ -19,7 +20,7 @@ namespace TGE
 
         void Destroy();
         void Play();
-        void AddObject(Object object) ;
+        void AddObject(std::shared_ptr<Object> object) ;
     };
 }
 

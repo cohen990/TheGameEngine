@@ -6,7 +6,8 @@
 
 namespace TGE::Shaders
 {
-    boost::optional<Shader> SimpleShader();
+    boost::optional<Shader> SimpleRedShader();
+    boost::optional<Shader> SimpleBlueShader();
 }
 
 #endif
