@@ -2,7 +2,9 @@
 #define TGEGAME_HPP
 
 #include <GLFW/glfw3.h>
-#include "TGEobject.hpp"
+#include "Objects/TGEobject.hpp"
+
+using namespace TGE::Objects;
 
 namespace TGE
 {

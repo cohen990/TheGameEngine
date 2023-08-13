@@ -17,9 +17,9 @@ GLFWwindow* TGE::CreateWindow()
 	{
 		fprintf(stderr, "Failed to open the window");
 		getchar();
-		return NULL;
+		return nullptr;
 	}
-	return window;
 
 	glfwMakeContextCurrent(window);
+	return window;
 }

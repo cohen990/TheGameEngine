@@ -2,10 +2,11 @@
 #define TGEENGINE_HPP
 
 #include "TGEgame.hpp"
+#include <boost/optional.hpp>
 
 namespace TGE
 {
-    Game CreateGame();
+    boost::optional<Game> CreateGame();
     void TearDown();
 }
 

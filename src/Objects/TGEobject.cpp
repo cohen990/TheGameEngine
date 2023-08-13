@@ -1,9 +1,10 @@
 #include <iostream>
 #include "TGEobject.hpp"
 
-using namespace TGE;
+using namespace TGE::Objects;
 
 Object::Object(){
+    _type = "Object";
 }
 
 void Object::AddChild(Object child){
@@ -11,10 +12,17 @@ void Object::AddChild(Object child){
 }
 
 void Object::DebugPrint(){
-    std::cout << this << std::endl;
+    std::cout << _type << " at address: " << this << std::endl;
 
     for (auto & child : _children) 
     {
         child.DebugPrint();
+    }
+}
+
+void Object::Render(){
+    for (auto & child : _children) 
+    {
+        child.Render();
     }
 }

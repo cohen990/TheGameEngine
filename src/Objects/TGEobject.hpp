@@ -3,15 +3,17 @@
 
 #include <vector>
 
-namespace TGE
+namespace TGE::Objects
 {
     class Object
     {
-    private:
+    protected:
         std::vector<Object> _children;
+        char* _type;
     public:
         Object();
         void AddChild(Object object);
+        virtual void Render();
         void DebugPrint();
     };
 }
