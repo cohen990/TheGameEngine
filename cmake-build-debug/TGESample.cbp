@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TGESample"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\IO\;CMake Files\src\Objects\;CMake Files\src\Shaders\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/root/git/engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sample-game">
+				<Option output="/root/git/engine/cmake-build-debug/sample-game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/git/engine/cmake-build-debug"/>
+					<Add directory="/root/git/engine/MathFunctions"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 sample-game"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sample-game/fast">
+				<Option output="/root/git/engine/cmake-build-debug/sample-game" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/git/engine/cmake-build-debug"/>
+					<Add directory="/root/git/engine/MathFunctions"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 sample-game/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/root/git/engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/root/git/engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TGE">
+				<Option output="/root/git/engine/cmake-build-debug/src/libTGE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/git/engine/cmake-build-debug"/>
+					<Add directory="/root/git/engine/MathFunctions"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 TGE"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TGE/fast">
+				<Option output="/root/git/engine/cmake-build-debug/src/libTGE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/root/git/engine/cmake-build-debug"/>
+					<Add directory="/root/git/engine/MathFunctions"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 TGE/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IO">
+				<Option output="/root/git/engine/cmake-build-debug/src/IO/libIO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src/IO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 IO"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="IO/fast">
+				<Option output="/root/git/engine/cmake-build-debug/src/IO/libIO.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src/IO"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 IO/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/IO/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Objects">
+				<Option output="/root/git/engine/cmake-build-debug/src/Objects/libObjects.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src/Objects"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 Objects"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Objects/fast">
+				<Option output="/root/git/engine/cmake-build-debug/src/Objects/libObjects.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src/Objects"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 Objects/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Objects/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Shaders">
+				<Option output="/root/git/engine/cmake-build-debug/src/Shaders/libShaders.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src/Shaders"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 Shaders"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Shaders/fast">
+				<Option output="/root/git/engine/cmake-build-debug/src/Shaders/libShaders.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/root/git/engine/cmake-build-debug/src/Shaders"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 Shaders/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/root/git/engine/cmake-build-debug/src/Shaders/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/root/git/engine/src/IO/TGEfiles.cpp">
+			<Option target="IO"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/IO/TGEfiles.hpp">
+			<Option target="IO"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/TGEmesh.cpp">
+			<Option target="Objects"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/TGEmesh.hpp">
+			<Option target="Objects"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/TGEobject.cpp">
+			<Option target="Objects"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/TGEobject.hpp">
+			<Option target="Objects"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/TGEroot.cpp">
+			<Option target="Objects"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/TGEroot.hpp">
+			<Option target="Objects"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/TGEbuiltInShaders.cpp">
+			<Option target="Shaders"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/TGEbuiltInShaders.hpp">
+			<Option target="Shaders"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/TGEloadShaders.cpp">
+			<Option target="Shaders"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/TGEloadShaders.hpp">
+			<Option target="Shaders"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/TGEshader.cpp">
+			<Option target="Shaders"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/TGEshader.hpp">
+			<Option target="Shaders"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/TGEengine.cpp">
+			<Option target="TGE"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/TGEengine.hpp">
+			<Option target="TGE"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/TGEgame.cpp">
+			<Option target="TGE"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/TGEgame.hpp">
+			<Option target="TGE"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/TGEwindowManager.cpp">
+			<Option target="TGE"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/TGEwindowManager.hpp">
+			<Option target="TGE"/>
+		</Unit>
+		<Unit filename="/root/git/engine/tester-app/mygame.cpp">
+			<Option target="sample-game"/>
+		</Unit>
+		<Unit filename="/root/git/engine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/IO/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\IO\"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Objects/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Objects\"/>
+		</Unit>
+		<Unit filename="/root/git/engine/src/Shaders/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\Shaders\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
